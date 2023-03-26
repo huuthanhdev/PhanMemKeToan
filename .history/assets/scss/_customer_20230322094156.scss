@@ -1,0 +1,30 @@
+.home{
+    &-content{
+        margin: 20px;
+    }
+}
+// table
+.search{
+    top:6px;
+    left:10px;
+}
+  
+.form-control{
+    border:none;
+    padding-left:32px;
+}
+
+.form-control:focus{
+    border:none;
+    box-shadow:none;
+}
+
+.green{
+    color:green;
+}
+.table .tr{
+    background-color: #e5e8ec;
+}
+.home-content .home-tab{
+    margin-right: 10px;
+}

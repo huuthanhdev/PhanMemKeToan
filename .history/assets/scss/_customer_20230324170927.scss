@@ -1,0 +1,57 @@
+.home{
+    &-content{
+        margin: 20px;
+    }
+}
+// table
+.table-hover{
+    transition: .5s ease-in-out;
+}
+.search{
+    top:6px;
+    left:10px;
+}
+  
+.form-control{
+    border:none !important; 
+    margin-bottom: 5px !important;
+
+}
+
+.form-control:focus{
+    border:none !important;
+    box-shadow:none !important;
+}
+.container-fluid .btn{
+    border:none !important;
+    box-shadow:none !important;
+}
+
+.home-tab a{
+    display: inline-block;
+    padding: 15px;
+    margin-top: auto;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #25282c;
+    transition: all 0.1s linear;
+    &:hover{
+        font-weight: bold;
+        background-color: #fff;
+        color: inherit;
+        border-radius: 10px 10px 0 0;
+    }
+}
+.hometab{
+    height: 20px;
+}
+
+// tab active
+.home-content .home-tab .tab-item.active{
+    font-weight: bold;
+    background-color: #fff;
+    color: inherit;
+    border-radius: 10px 10px 0 0;
+}
