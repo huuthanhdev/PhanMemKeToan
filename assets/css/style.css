@@ -457,23 +457,24 @@
   border-radius: 10px 10px 0 0;
 }
 
-.form-popup {
+.form-popup--customer {
   display: none;
   border: none;
 }
 
-.form-popup .bg-popup {
+.form-popup--customer .bg-popup {
   background-color: #25282c;
-  opacity: 0.6;
+  opacity: 0.5;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 9998;
 }
 
-.form-container {
+.form-popup--customer .form-container {
   width: 1000px;
   padding: 20px;
   background-color: white;
@@ -484,32 +485,27 @@
   transform: translate(-50%, -50%);
   z-index: 9999;
 }
-
-.form-container h2 {
+.form-popup--customer .form-container h2 {
   text-align: left;
   margin-top: 0;
 }
-
-.form-container input[type=text], input[type=email], input[type=tel] {
-  width: 80%;
+.form-popup--customer .form-container input[type=text], .form-popup--customer input[type=email], .form-popup--customer input[type=tel], .form-popup--customer input[type=textarea], .form-popup--customer select[name=lang] {
+  width: 100%;
   padding: 5px;
   border: 0.5px solid #ccc;
   border-radius: 2px;
   margin-top: 5px;
   margin-bottom: 5px;
-  resize: vertical;
   outline-color: #198754;
 }
-
-.form-container button {
+.form-popup--customer .form-container button {
   background-color: #ddd;
   color: black;
   border: none;
   cursor: pointer;
   width: 50px;
 }
-
-.form-container .cancel {
+.form-popup--customer .form-container .cancel {
   background-color: transparent;
   position: absolute;
   top: 0;
@@ -517,38 +513,296 @@
   margin-top: 10px;
   transition: all 0.2s ease-in;
 }
-.form-container .cancel:hover {
+.form-popup--customer .form-container .cancel:hover {
   transform: rotate(90deg) scale(1.3);
-  color: #198754 !important;
+  color: rgb(192, 0, 0) !important;
 }
-
-.form-container .save {
+.form-popup--customer .form-container .save {
   float: right;
   width: 50px;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-right: auto;
 }
-
-.form-container .save:hover {
+.form-popup--customer .form-container .save:hover {
   background-color: #198754 !important;
   color: #fff !important;
+  font-weight: bold;
+}
+.form-popup--customer .form-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 70px 70px 70px;
+  grid-gap: 5px 25px;
+}
+.form-popup--customer .form-content .taxid {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.form-popup--customer .form-content .customerid {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.form-popup--customer .form-content .customername {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+.form-popup--customer .form-content .customertype {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.form-popup--customer .form-content .phone {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+.form-popup--customer .form-content .email {
+  grid-column: 3/5;
+  grid-row: 2/3;
+}
+.form-popup--customer .form-content .address {
+  grid-column: 1/3;
+  grid-row: 3/4;
 }
 
-.form-left,
-.form-right {
-  width: calc(50% - 20px);
-  display: flex;
-  flex-direction: column;
+.home-content--overview {
+  margin: 40px;
 }
-
-.form-content {
+.home-content--overview .home-card {
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+}
+.home-content--overview .card-item {
+  min-width: 23%;
+  height: 180px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  transition: all 0.1s ease-in-out;
+}
+.home-content--overview .card-item:hover {
+  transform: scale(1.02);
+}
+.home-content--overview .card-heading {
+  display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: #25282c;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.home-content--overview .card-heading .icon-primary i {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgba(228, 228, 228, 0.5);
+  font-size: 30px;
+  margin-right: 20px;
+  padding: 10px;
+}
+.home-content--overview .card-heading .header {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: bold;
+}
+.home-content--overview .card-heading:hover {
+  color: #198754;
+}
+.home-content--overview .card-heading .icon-caret {
+  margin-left: auto;
+}
+.home-content--overview .card-content {
+  font-size: 28px;
+  margin-top: 20px;
+  color: #198754;
+  font-weight: bold;
+  margin-left: 65px;
 }
 
-.row {
-  margin: 20px !important;
+.form-popup--service {
+  display: none;
+  border: none;
+}
+
+.form-popup--service .bg-popup {
+  background-color: #25282c;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9998;
+}
+
+.form-popup--service .form-container {
+  width: 1000px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+.form-popup--service .form-container h2 {
+  text-align: left;
+  margin-top: 0;
+}
+.form-popup--service .form-container input[type=text], .form-popup--service input[type=email], .form-popup--service input[type=tel], .form-popup--service input[type=textarea], .form-popup--service select[name=lang], .form-popup--service input[type=number] {
+  width: 100%;
+  padding: 5px;
+  border: 0.5px solid #ccc;
+  border-radius: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  outline-color: #198754;
+}
+.form-popup--service .form-container button {
+  background-color: #ddd;
+  color: black;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+}
+.form-popup--service .form-container .cancel {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  transition: all 0.2s ease-in;
+}
+.form-popup--service .form-container .cancel:hover {
+  transform: rotate(90deg) scale(1.3);
+  color: rgb(192, 0, 0) !important;
+}
+.form-popup--service .form-container .save {
+  float: right;
+  width: 50px;
+  margin-top: 20px;
+  margin-right: auto;
+}
+.form-popup--service .form-container .save:hover {
+  background-color: #198754 !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+.form-popup--service .form-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 70px 70px;
+  grid-gap: 5px 25px;
+}
+.form-popup--service .form-content .service-id {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.form-popup--service .form-content .service-name {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+.form-popup--service .form-content .service-desc {
+  grid-column: 3/5;
+  grid-row: 2/3;
+}
+.form-popup--service .form-content .service-price {
+  grid-column: 3/5;
+  grid-row: 1/2;
+}
+
+.form-popup--account {
+  display: none;
+  border: none;
+}
+
+.form-popup--account .bg-popup {
+  background-color: #25282c;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9998;
+}
+
+.form-popup--account .form-container {
+  width: 800px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+.form-popup--account .form-container h2 {
+  text-align: left;
+  margin-top: 0;
+}
+.form-popup--account .form-container input[type=text], .form-popup--account input[type=email], .form-popup--account input[type=tel], .form-popup--account input[type=textarea], .form-popup--account select[name=lang], .form-popup--account input[type=number] {
+  width: 100%;
+  padding: 5px;
+  border: 0.5px solid #ccc;
+  border-radius: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  outline-color: #198754;
+}
+.form-popup--account .form-container button {
+  background-color: #ddd;
+  color: black;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+}
+.form-popup--account .form-container .cancel {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  transition: all 0.2s ease-in;
+}
+.form-popup--account .form-container .cancel:hover {
+  transform: rotate(90deg) scale(1.3);
+  color: rgb(192, 0, 0) !important;
+}
+.form-popup--account .form-container .save {
+  float: right;
+  width: 50px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+.form-popup--account .form-container .save:hover {
+  background-color: #198754 !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+.form-popup--account .form-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 70px 70px;
+  grid-gap: 5px 25px;
+}
+.form-popup--account .form-content .account-id {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.form-popup--account .form-content .account-level {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.form-popup--account .form-content .account-name {
+  grid-column: 1/3;
+  grid-row: 2/3;
 }
 
 /*# sourceMappingURL=style.css.map */

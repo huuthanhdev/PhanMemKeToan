@@ -1,0 +1,28 @@
+
+.home-content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 40px;
+}
+.home-card{
+    width: calc(32%);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+}
+.card-heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.card-heading .icon-caret{
+    margin-left: auto;
+}
+.card-heading .icon-card{
+    padding: 10px;
+    max-width: 20px;
+    height: 20px;
+}
