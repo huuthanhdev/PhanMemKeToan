@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-  <!-- Coding by CodingLab | www.codinglabweb.com -->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,7 +34,7 @@
               <li><a class="link_name" href="../pages/overview.html">Tổng quan</a></li>
             </ul>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <div class="icon-link">
               <a href="../pages/customer.html">
                 <i class='fa-solid fa-list-ul' ></i>
@@ -43,14 +43,14 @@
               <i class='bx bxs-chevron-down arrow' ></i>
             </div>
             <ul class="sub-menu">
-              <li><a class="link_name" href="../pages/customer.html">Danh mục</a></li>
+              <li><a class="link_name" href="#">Danh mục</a></li>
               <li><a href="../pages/customer.html">Khách hàng</a></li>
               <li><a href="../pages/service.html">Dịch vụ</a></li>
               <li><a href="../pages/account.html">Tài khoản</a></li>
             </ul>
           </li>
           
-          <li class="nav-item">
+          <li class="nav-item active">
             <div class="icon-link">
               <a href="../pages/bill.html">
                 <i class='fa-solid fa-file-lines' ></i>
@@ -131,9 +131,8 @@
       <!-- content -->
       <div class="home-content">
         <div class="home-tab">
-          <a class="tab-item" href="../pages/customer.html">Khách hàng</a>
-          <a class="tab-item active" href="../pages/service.html">Dịch vụ</a>
-          <a class="tab-item" href="../pages/account.html">Hệ thống tài khoản</a>
+          <a class="tab-item" href="../pages/bill.html">Hóa đơn GTGT</a>
+          <a class="tab-item active" href="../pages/coupon.html">Phiếu giảm giá hàng bán</a>
         </div>
         <hr class="mt-0 mb-4">
         <!-- table -->
@@ -141,37 +140,92 @@
           <div class="mb-3 d-flex justify-content-start align-items-center">
               <div class="position-relative">
                   <span class="position-absolute search"><i class="fa fa-search"></i></span>
-                  <input  id="inputSearch" class="form-control w-100 px-5 m-0" placeholder="Tìm kiếm">
+                  <input class="form-control w-100 px-5 m-0" placeholder="Tìm kiếm">
               </div>
               <div class="btn">
-                <button onclick="openForm()" type="button" class="btn btn-success ms-3">Thêm</button>              </div>
+                <button onclick="openForm()" type="button" class="btn btn-success ms-3">Thêm mới</button>
+                <i class="fa-solid fa-plus" style="color: green"></i>
+              </div>
               <div class="filter px-2">   
                   <span>Lọc <i class="fa fa-angle-down"></i></span>
                   <i class="fa fa-ellipsis-h ms-3"></i>
               </div> 
           </div>
           <div class="table-responsive">
-          <table id="serviceTable" class="table table-responsive table-hover bg-light">  
+          <table class="table table-responsive table-hover bg-light">  
             <thead>
               <tr style="background-color: #dadee2">
-                <th scope="col" width="3%"><input type="checkbox" onclick="javascript:checkAll(this)"/></th>
-                <th scope="col" width="10%">#</th>
-                <th scope="col" width="20%">Tên dịch vụ</th>
-                <th scope="col" width="30%">Mô tả</th>
-                <th scope="col" width="12%">Phân loại</th>
-                <th scope="col" width="10%">Đơn giá</th>
+                <th scope="col" width="2%"><input class="form-check-input" type="checkbox"></th>
+                <th scope="col" width="8%">#</th>
+                <th scope="col" width="15%">Tên khách hàng</th>
+                <th scope="col" width="10%">Điện thoại</th>
+                <th scope="col" width="10%">Email</th>
+                <th scope="col" width="15%">Mã số thuế</th>
+                <th scope="col" width="20%">Điạ chỉ</th>
+                <th scope="col" width="10%">Hình thức</th>
+                <th scope="col" width="10%" class="text-center">Chức năng</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row"><input type="checkbox"></th>
-                <td>WS001</td>
-                <td>Xây dựng website TMĐT</td>
-                <td>Website bao gồm các chức năng bán hàng, đặt hàng...</td>
-                <td>website</td>
-                <td>1.000.000</td>
+                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                <td>12</td>
+                <td>Công ty TNHH MC Holding</td>
+                <td>029 576 123</td>
+                <td>partner@2million.vn</td>
+                <td>Althan Travis</td>
+                <td>Wirecard for figma</td>
+                <td>Doanh nghiệp</td>
+                <td class="text-center">Sửa</td>
               </tr>
               
+              <tr>
+                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                <td>14</td>
+                <td>12 Oct, 21</td>
+                <td>059 537 890</td>
+                <td>partner@2million.vn</td>
+                <td>Tomo arvis</td>
+                <td>Altroz furry</td>
+                <td>Doanh nghiệp</td>
+                <td class="text-center">Sửa</td>
+              </tr>
+              
+              <tr>
+                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                <td>17</td>
+                <td>1 Nov, 21</td>
+                <td>029 576 123</td>
+                <td>partner@2million.vn</td>
+                <td>Althan Travis</td>
+                <td>Apple Macbook air</td>
+                <td>Cá nhân</td>
+                <td class="text-center">Sửa</td>
+              </tr>
+              
+              <tr>
+                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                <td>90</td>
+                <td>19 Oct, 21</td>
+                <td>029 576 123</td>
+                <td>partner@2million.vn</td>
+                <td>Travis head</td>
+                <td>Apple Macbook Pro</td>
+                <td>Doanh nghiệp</td>
+                <td class="text-center">Sửa</td>
+              </tr>
+              
+              <tr>
+                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                <td>12</td>
+                <td>1 Oct, 21</td>
+                <td>029 576 123</td>
+                <td>partner@2million.vn</td>
+                <td>Althan Travis</td>
+                <td>Wirecard for figma</td>
+                <td>Cá nhân</td>
+                <td class="text-center">Sửa</td>
+              </tr>
             </tbody>
           </table> 
           </div>    
@@ -191,56 +245,65 @@
             </li>
           </ul>
         </nav>
-        <!-- //pagination -->        
+        <!-- //pagination -->
+        
       </div>
     </section>
 
     <!-- popup -->
-    <div class="form-popup--service" id="serviceForm">
+    <div class="form-popup--customer" id="myForm">
       <div class="bg-popup"></div>
       <form action="/action_page.php" class="form-container">
-        <h2>Thông tin dịch vụ</h2>
+        <h2>Thông tin khách hàng</h2>
         <hr bg-dark>
         <div class="form-content">
-          <div class="serviceId">
-            <label for="serviceId"><b>Mã dịch vụ</b> <b style="color: red;">*</b></label>
-            <input id="serviceId" type="text" placeholder="Nhập mã dịch vụ" name="serviceId" required>
-          </div>
-          <div class="serviceName">
-            <label for="serviceName"><b>Tên dịch vụ</b> <b style="color: red;">*</b></label>
-            <input id="serviceName" type="text" placeholder="Nhập tên dịch vụ" name="serviceName" required>
-          </div>
-          <div class="serviceType">
-            <label for="serviceType"><b>Phân loại</b></label>
-            <select name="lang" id="serviceType" required>
-              <option value="">--Lựa chọn hình thức--</option>
-              <option value="Website">Website</option>
-              <option value="Sự kiện">Sự kiện</option>
-              <option value="Quảng cáo">Quảng cáo</option>
-              <option value="Booking">Booking</option>
-          </select>
-          </div>
+          <!-- <div class="form-left"> -->
+            <div class="taxid">
+              <label for="taxid"><b>Mã số thuế</b></label>
+              <input type="text" placeholder="Nhập mã số thuế" name="taxid" required>
+            </div>
+            <div class="customerid">
+              <label for="customerid"><b>Mã khách hàng</b> <b style="color: red;">*</b>
+              </label>
+              <input type="text" placeholder="Nhập mã khách hàng" name="customerid" required>
+            </div>
+            <div class="customername">
+              <label for="customername"><b>Tên khách hàng</b> <b style="color: red;">*</b></label>
+              <input type="text" placeholder="Nhập tên khách hàng" name="customername" required>
+            </div>
+            <div class="cusomertype">
+              <label for="cusomertype"><b>Hình thức</b></label>
+              <select name="lang" id="cusomertype" required>
+                <option value="">--Lựa chọn hình thức--</option>
+                <option value="csharp">Doanh nghiệp</option>
+                <option value="csharp">Cá nhân</option>
+            </select>
+            </div>
+          <!-- </div> -->
 
-          <div class="servicePrice">
-            <label for="servicePrice"><b>Đơn giá</b></label>
-            <input id="servicePrice" type="number" placeholder="Nhập đơn giá" name="servicePrice" required>
+          <!-- <div class="form-right"> -->
+            <div class="email">
+              <label for="email"><b>Email</b></label>
+              <input type="email" placeholder="Nhập email" name="email" required>
+            </div>
+            <div class="phone">
+              <label for="phone"><b>Điện thoại</b></label>
+              <input type="tel" placeholder="Nhập số điện thoại" name="phone" required>
+            </div>
+            <div class="address">
+              <label for="address"><b>Địa chỉ</b></label>
+              <input type="textarea" placeholder="Nhập địa chỉ" name="address" required>
+            </div>
           </div>
-
-          <div class="serviceDesc">
-            <label for="serviceDesc"><b>Mô tả</b></label>
-            <input id="serviceDesc" type="textarea" placeholder="Mô tả chi tiết dịch vụ" name="serviceDesc" required>
-          </div>
-        </div>
+        <!-- </div> -->
         
-        <input type="button" id="btnSave" value="Save">
-        <!-- <input type="submit" id="btnSave" value="Lưu"> -->
-        <button type="button" id="btnClose" onclick="closeForm()"><i class="fa-solid fa-close"></i></button>
-        <button type="button" id="btnCancel" onclick="closeForm()">Hủy</i></button>
+        <button type="submit" class="btn save">Lưu</button>
+        <button type="button" class="btn cancel" onclick="closeForm()"><i class="fa-solid fa-close"></i></button>
       </form>
     </div>
     <!-- //popup -->
 
-    <script src="../functions/service.js"></script>
-    <script src="../functions/app.js"></script>
+    <script src="../app.js"></script>
+
 </body>
 </html>
