@@ -1,0 +1,220 @@
+// popup --customer
+
+.form-popup--bill {
+    display: none;
+    border: none;
+}
+ .form-popup--bill .bg-popup {
+    background-color: #25282c;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    @include absCenter();
+    z-index: 9998;
+ } 
+
+ .form-popup--bill {
+    .form-container {
+        width: 1200px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        @include absCenter();
+        z-index: 9999;
+    }
+
+    .form-container h2 {
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .form-container input[type=text], input[type=email], input[type=tel] , input[type=textarea], select[name=lang],
+    input[type=date], input[type=number] {
+        width: 100%;  
+        // height: 100%;
+        padding: 2px;
+        border: 0.5px solid #ccc;
+        border-radius: 2px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        // resize: vertical;
+        outline-color: #198754;    
+    }
+
+    // .form-container input[type=submit] {
+    //     background-color: #198754;
+    //     color: white;
+    //     border: none;
+    // }
+
+    .form-container button {
+        background-color: #ddd;
+        color: black;
+        border: 1px solid transparent;
+        cursor: pointer;
+        width: 60px;
+    }
+
+    .form-container .close {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+        transition: all 0.1s ease-in;
+        &:hover {
+            transform: rotate(90deg) scale(1.3);
+            color: rgb(192, 0, 0) !important;
+        }
+    }
+
+    .form-container .save,
+    .form-container .print{
+        float: right;
+        width: 50px;
+        margin-top: 20px;
+        margin-left: 10px;
+        transition: all 0.1s ease-in;
+    }
+    .form-container .save{
+        background-color: #198754 !important;
+        color: #fff !important;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            background-color: #13663f !important;
+        }
+    }
+    .form-container .print:hover{
+        color: #17794b;
+        border: 1px solid #17794b;
+    }
+
+    .form-container .cancel{
+        float: left;
+        width: 60px;
+        margin-top: 20px;
+        &:hover{
+            color: rgb(192, 0, 0);
+            font-weight: bold;
+        }
+    }
+
+    .form-content{
+        display: flex;
+        flex-direction: row;
+        // align-items: flex-start;
+        justify-content: space-between;
+    }
+    .form-left{
+        width: calc(70% - 10px);
+        margin-right: 20px;
+    }
+    .form-right{
+        width: calc(30% - 10px);
+    }
+    fieldset{
+        border: 1px groove #ddd;
+        padding: 10px 20px;
+    }
+    legend{
+        color: #198754;
+        font-weight: bold;
+    }
+    // grid-left 
+    .form-left{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 60px 60px 60px 60px 60px;
+        grid-gap: 5px 20px;
+    }
+    .form-left .bill{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .form-left .customerid{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .form-left .customername{
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .form-left .taxid{
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+    .form-left .address{
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+    .form-left .STK{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .form-left .NH{
+        grid-column: 2/4;
+        grid-row: 5/6;
+    }
+    //grid-right
+    .form-right{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60px 60px 60px 60px 60px;
+        grid-gap: 5px 20px;
+    }
+    .form-right .date{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .form-right .TKNoTT{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .form-right .TKCoDT{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .form-right .TKCoThue{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .form-right .tax{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .form-right .TKCK{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .form-right .TLCK{
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+    .total{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-left: 810px;
+        margin-top: 20px;
+        .label-total-amount,
+        .total-amount{
+            & ul{
+                padding-left: 0;
+            }
+            & ul>li{
+                list-style: none;
+            }
+            & ul>li:nth-child(3){
+                font-weight: bold;
+            }
+        }
+        .total-amount{
+            & ul>li{
+                text-align: right;
+            }
+
+        }
+
+    }
+}

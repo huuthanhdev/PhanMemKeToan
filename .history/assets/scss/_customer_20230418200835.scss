@@ -1,0 +1,195 @@
+.home{
+    &-content{
+        margin: 20px;
+    }
+}
+// table
+.table-hover{
+    transition: .5s ease-in-out;
+}
+.search{
+    top:6px;
+    left:10px;
+}
+  
+.form-control{
+    border:none !important; 
+    margin-bottom: 5px !important;
+
+}
+
+.form-control:focus{
+    border:none !important;
+    box-shadow:none !important;
+}
+// .container-fluid .btn{
+//     border:none !important;
+//     box-shadow:none !important;
+//     position: relative;
+// }
+// .container-fluid .btn i{
+//     position: absolute;
+//     right: 0;
+//     top: 50;
+//     transform: translate(50%, 60%);
+// }
+.home-tab a{
+    display: inline-block;
+    padding: 15px;
+    margin-top: auto;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #25282c;
+    transition: all 0.1s linear;
+    &:hover{
+        font-weight: bold;
+        background-color: #fff;
+        color: inherit;
+        border-radius: 10px 10px 0 0;
+    }
+}
+.hometab{
+    height: 20px;
+}
+
+// tab active
+.home-content .home-tab .tab-item.active{
+    font-weight: bold;
+    background-color: #fff;
+    color: inherit;
+    border-radius: 10px 10px 0 0;
+}
+
+// popup --customer
+
+.form-popup--customer {
+    display: none;
+    border: none;
+}
+ .form-popup--customer .bg-popup {
+    background-color: #25282c;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    @include absCenter();
+    z-index: 9998;
+ } 
+
+ .form-popup--customer  {
+    .form-container {
+        width: 1000px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        @include absCenter();
+        z-index: 9999;
+    }
+
+    .form-container h2 {
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .form-container input[type=text], input[type=email], input[type=tel] , input[type=textarea], select[name=lang] {
+        width: 100%;  
+        // height: 100%;
+        padding: 5px;
+        border: 0.5px solid #ccc;
+        border-radius: 2px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        // resize: vertical;
+        outline-color: #198754;    
+    }
+
+
+    .form-container .btnClose {
+        color: black;
+        border: none;
+        cursor: pointer;
+        width: 60px;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            transform: rotate(90deg) scale(1.3);
+            color: rgb(192, 0, 0) !important;
+        }
+    }
+
+    .form-container #btnSave{
+        background-color: #198754;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 10px;
+        text-align: center;
+        float: right;
+        width: 60px;
+        margin-top: 20px;
+        margin-right: auto;
+        font-weight: bold;
+        transition: all 0.1s ease-in;
+    }
+    .form-container #btnSave:hover {
+        background-color: #1a764b !important;
+        color: #fff !important;
+        transform: scale(1.05);
+    }
+
+    // .form-left,
+    // .form-right{
+    //     width: calc(50% - 20px);
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+    // .form-content{
+    //     display: flex;
+    //     align-items: flex-start;
+    //     justify-content: space-between;
+    //     flex-direction: row;
+    // }
+    .form-content{
+        // 4 columns
+        // 4 row: 260px
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 70px 70px 70px;
+        grid-gap: 5px 25px;
+    }
+    .form-content .taxId{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .form-content .customerId{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .form-content .customerName{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .form-content .customerType{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .form-content .phone{
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+    .form-content .email{
+        grid-column: 3/5;
+        grid-row: 2/3;
+    }
+    .form-content .address{
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+
+}

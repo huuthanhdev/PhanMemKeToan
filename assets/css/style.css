@@ -1,11 +1,15 @@
 @charset "UTF-8";
 /* Google Fonts Import Link */
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+body fieldset, body legend {
+  all: revert;
 }
 
 .sidebar {
@@ -498,35 +502,59 @@
   margin-bottom: 5px;
   outline-color: #198754;
 }
-.form-popup--customer .form-container button {
-  background-color: #ddd;
+.form-popup--customer .form-container #btnClose {
   color: black;
   border: none;
   cursor: pointer;
-  width: 50px;
-}
-.form-popup--customer .form-container .cancel {
+  width: 60px;
   background-color: transparent;
   position: absolute;
   top: 0;
   right: 0;
   margin-top: 10px;
-  transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in-out;
 }
-.form-popup--customer .form-container .cancel:hover {
+.form-popup--customer .form-container #btnClose:hover {
   transform: rotate(90deg) scale(1.3);
-  color: rgb(192, 0, 0) !important;
+  color: #c00000 !important;
 }
-.form-popup--customer .form-container .save {
+.form-popup--customer .form-container #btnSave {
+  background-color: #198754;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
   float: right;
-  width: 50px;
-  margin-top: 20px;
+  width: 60px;
+  margin-top: 40px;
   margin-right: auto;
-}
-.form-popup--customer .form-container .save:hover {
-  background-color: #198754 !important;
-  color: #fff !important;
   font-weight: bold;
+  transition: all 0.1s ease-in;
+}
+.form-popup--customer .form-container #btnSave:hover {
+  background-color: #1a764b !important;
+  color: #fff !important;
+  transform: scale(1.02);
+}
+.form-popup--customer .form-container #btnCancel {
+  background-color: #ddd;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  float: left;
+  width: 60px;
+  margin-top: 40px;
+  margin-right: auto;
+  font-weight: bold;
+  transition: all 0.1s ease-in;
+}
+.form-popup--customer .form-container #btnCancel:hover {
+  background-color: rgba(221, 221, 221, 0.5) !important;
+  color: #c00000 !important;
+  transform: scale(1.02);
 }
 .form-popup--customer .form-content {
   display: grid;
@@ -534,19 +562,19 @@
   grid-template-rows: 70px 70px 70px;
   grid-gap: 5px 25px;
 }
-.form-popup--customer .form-content .taxid {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-.form-popup--customer .form-content .customerid {
+.form-popup--customer .form-content .taxId {
   grid-column: 2/3;
   grid-row: 1/2;
 }
-.form-popup--customer .form-content .customername {
+.form-popup--customer .form-content .customerId {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.form-popup--customer .form-content .customerName {
   grid-column: 1/3;
   grid-row: 2/3;
 }
-.form-popup--customer .form-content .customertype {
+.form-popup--customer .form-content .customerType {
   grid-column: 3/4;
   grid-row: 1/2;
 }
@@ -559,7 +587,7 @@
   grid-row: 2/3;
 }
 .form-popup--customer .form-content .address {
-  grid-column: 1/3;
+  grid-column: 1/5;
   grid-row: 3/4;
 }
 
@@ -662,35 +690,59 @@
   margin-bottom: 5px;
   outline-color: #198754;
 }
-.form-popup--service .form-container button {
-  background-color: #ddd;
+.form-popup--service .form-container #btnClose {
   color: black;
   border: none;
   cursor: pointer;
-  width: 50px;
-}
-.form-popup--service .form-container .cancel {
+  width: 60px;
   background-color: transparent;
   position: absolute;
   top: 0;
   right: 0;
   margin-top: 10px;
-  transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in-out;
 }
-.form-popup--service .form-container .cancel:hover {
+.form-popup--service .form-container #btnClose:hover {
   transform: rotate(90deg) scale(1.3);
-  color: rgb(192, 0, 0) !important;
+  color: #c00000 !important;
 }
-.form-popup--service .form-container .save {
+.form-popup--service .form-container #btnSave {
+  background-color: #198754;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
   float: right;
-  width: 50px;
-  margin-top: 20px;
+  width: 60px;
+  margin-top: 40px;
   margin-right: auto;
-}
-.form-popup--service .form-container .save:hover {
-  background-color: #198754 !important;
-  color: #fff !important;
   font-weight: bold;
+  transition: all 0.1s ease-in;
+}
+.form-popup--service .form-container #btnSave:hover {
+  background-color: #1a764b !important;
+  color: #fff !important;
+  transform: scale(1.02);
+}
+.form-popup--service .form-container #btnCancel {
+  background-color: #ddd;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  float: left;
+  width: 60px;
+  margin-top: 40px;
+  margin-right: auto;
+  font-weight: bold;
+  transition: all 0.1s ease-in;
+}
+.form-popup--service .form-container #btnCancel:hover {
+  background-color: rgba(221, 221, 221, 0.5) !important;
+  color: #c00000 !important;
+  transform: scale(1.02);
 }
 .form-popup--service .form-content {
   display: grid;
@@ -756,35 +808,59 @@
   margin-bottom: 5px;
   outline-color: #198754;
 }
-.form-popup--account .form-container button {
-  background-color: #ddd;
+.form-popup--account .form-container #btnClose {
   color: black;
   border: none;
   cursor: pointer;
-  width: 50px;
-}
-.form-popup--account .form-container .cancel {
+  width: 60px;
   background-color: transparent;
   position: absolute;
   top: 0;
   right: 0;
   margin-top: 10px;
-  transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in-out;
 }
-.form-popup--account .form-container .cancel:hover {
+.form-popup--account .form-container #btnClose:hover {
   transform: rotate(90deg) scale(1.3);
-  color: rgb(192, 0, 0) !important;
+  color: #c00000 !important;
 }
-.form-popup--account .form-container .save {
+.form-popup--account .form-container #btnSave {
+  background-color: #198754;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
   float: right;
-  width: 50px;
-  margin-top: 20px;
-  margin-left: auto;
-}
-.form-popup--account .form-container .save:hover {
-  background-color: #198754 !important;
-  color: #fff !important;
+  width: 60px;
+  margin-top: 40px;
+  margin-right: auto;
   font-weight: bold;
+  transition: all 0.1s ease-in;
+}
+.form-popup--account .form-container #btnSave:hover {
+  background-color: #1a764b !important;
+  color: #fff !important;
+  transform: scale(1.02);
+}
+.form-popup--account .form-container #btnCancel {
+  background-color: #ddd;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  float: left;
+  width: 60px;
+  margin-top: 40px;
+  margin-right: auto;
+  font-weight: bold;
+  transition: all 0.1s ease-in;
+}
+.form-popup--account .form-container #btnCancel:hover {
+  background-color: rgba(221, 221, 221, 0.5) !important;
+  color: #c00000 !important;
+  transform: scale(1.02);
 }
 .form-popup--account .form-content {
   display: grid;
@@ -803,6 +879,263 @@
 .form-popup--account .form-content .account-name {
   grid-column: 1/3;
   grid-row: 2/3;
+}
+
+.form-popup--bill {
+  display: none;
+  border: none;
+}
+
+.form-popup--bill .bg-popup {
+  background-color: #25282c;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9998;
+}
+
+.form-popup--bill .table-responsive {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.form-popup--bill .form-container {
+  width: 1200px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+.form-popup--bill .form-container h2 {
+  text-align: left;
+  margin-top: 0;
+}
+.form-popup--bill .form-container input[type=text], .form-popup--bill input[type=email], .form-popup--bill input[type=tel], .form-popup--bill input[type=textarea], .form-popup--bill select[name=lang],
+.form-popup--bill input[type=date], .form-popup--bill input[type=number] {
+  width: 100%;
+  padding: 2px;
+  border: 0.5px solid #ccc;
+  border-radius: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  outline-color: #198754;
+}
+.form-popup--bill .form-container button {
+  background-color: #ddd;
+  color: black;
+  border: 1px solid transparent;
+  cursor: pointer;
+  width: 60px;
+}
+.form-popup--bill .form-container .close {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  transition: all 0.1s ease-in;
+}
+.form-popup--bill .form-container .close:hover {
+  transform: rotate(90deg) scale(1.3);
+  color: rgb(192, 0, 0) !important;
+}
+.form-popup--bill .form-container .save,
+.form-popup--bill .form-container .print {
+  float: right;
+  width: 55px;
+  margin-top: 20px;
+  margin-left: 10px;
+  transition: all 0.1s ease-in;
+}
+.form-popup--bill .form-container .save {
+  background-color: #198754 !important;
+  color: #fff !important;
+  transition: all 0.2s ease-in-out;
+}
+.form-popup--bill .form-container .save:hover {
+  background-color: #13663f !important;
+}
+.form-popup--bill .form-container .print:hover {
+  color: #17794b;
+  border: 1px solid #17794b;
+}
+.form-popup--bill .form-container .cancel {
+  float: left;
+  width: 60px;
+  margin-top: 20px;
+}
+.form-popup--bill .form-container .cancel:hover {
+  color: rgb(192, 0, 0);
+  font-weight: bold;
+}
+.form-popup--bill .form-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.form-popup--bill .form-left {
+  width: calc(70% - 10px);
+  margin-right: 20px;
+}
+.form-popup--bill .form-right {
+  width: calc(30% - 10px);
+}
+.form-popup--bill fieldset {
+  border: 1px groove #ddd;
+  padding: 10px 20px;
+}
+.form-popup--bill legend {
+  color: #198754;
+  font-weight: bold;
+}
+.form-popup--bill .form-left {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 60px 60px 60px 60px 60px;
+  grid-gap: 5px 20px;
+}
+.form-popup--bill .form-left .bill {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.form-popup--bill .form-left .customerid {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.form-popup--bill .form-left .customername {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+.form-popup--bill .form-left .taxid {
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+.form-popup--bill .form-left .address {
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
+.form-popup--bill .form-left .STK {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+.form-popup--bill .form-left .NH {
+  grid-column: 2/4;
+  grid-row: 5/6;
+}
+.form-popup--bill .form-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60px 60px 60px 60px 60px;
+  grid-gap: 5px 20px;
+}
+.form-popup--bill .form-right .date {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.form-popup--bill .form-right .TKNoTT {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.form-popup--bill .form-right .TKCoDT {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.form-popup--bill .form-right .TKCoThue {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.form-popup--bill .form-right .tax {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.form-popup--bill .form-right .TKCK {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+.form-popup--bill .form-right .TLCK {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+.form-popup--bill .total {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-left: 810px;
+  margin-top: 20px;
+}
+.form-popup--bill .total .label-total-amount ul,
+.form-popup--bill .total .total-amount ul {
+  padding-left: 0;
+}
+.form-popup--bill .total .label-total-amount ul > li,
+.form-popup--bill .total .total-amount ul > li {
+  list-style: none;
+}
+.form-popup--bill .total .label-total-amount ul > li:nth-child(3),
+.form-popup--bill .total .total-amount ul > li:nth-child(3) {
+  font-weight: bold;
+}
+.form-popup--bill .total .total-amount ul > li {
+  text-align: right;
+}
+
+.container--hoadonGTGT {
+  background-color: #fff;
+  width: 835px;
+  position: relative;
+  margin: 20px auto;
+  align-items: center;
+  border: 2px solid black;
+  padding: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.container--hoadonGTGT hr {
+  opacity: 0.5;
+}
+.container--hoadonGTGT .header {
+  text-align: center;
+}
+.container--hoadonGTGT .header p {
+  margin-bottom: 0;
+}
+.container--hoadonGTGT .header .title {
+  font-size: 25px;
+}
+.container--hoadonGTGT .content-service {
+  margin-top: 20px;
+}
+.container--hoadonGTGT .content-service .table-bordered {
+  max-width: 100%;
+}
+.container--hoadonGTGT .content-service .table-bordered th, .container--hoadonGTGT .content-service td {
+  padding: 5px;
+  text-align: center;
+  height: 36px;
+}
+.container--hoadonGTGT .content-service .table-bordered td {
+  text-align: right;
+}
+.container--hoadonGTGT .content-service .table-bordered td:nth-child(2) {
+  text-align: left;
+}
+.container--hoadonGTGT .content-service .table-bordered td:nth-child(1) {
+  text-align: center;
+}
+.container--hoadonGTGT .footer {
+  margin-top: 30px;
+  height: 200px;
+  justify-content: space-between;
+}
+.container--hoadonGTGT .footer-customer, .container--hoadonGTGT .footer-company {
+  width: 50%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
