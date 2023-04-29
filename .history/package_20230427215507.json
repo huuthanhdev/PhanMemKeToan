@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "mssql": "^9.1.1",
+    "mysql": "^2.18.1"
+  },
+  "name": "phanmemketoan",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass --watch assets/scss/style.scss assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huuthanhdev/PhanMemKeToan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huuthanhdev/PhanMemKeToan/issues"
+  },
+  "homepage": "https://github.com/huuthanhdev/PhanMemKeToan#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.22"
+  }
+}

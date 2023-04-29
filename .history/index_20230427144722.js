@@ -1,0 +1,50 @@
+
+var con = require("./functions/connection");
+
+// con.connect(function(error){
+//     if (error) throw error;
+
+//     con.query("select * from students", function(error, result){
+//         if (error) throw  error;
+//         console.log(result);
+//     });
+// });
+var express = require('express');
+var app = express();
+var bodyParser = require('body-parser');
+const { Router } = require("express");
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
+
+app.get('/pages/customer',function(req, res){
+    res.sendFile(__dirname+'../pages/customer.html');
+});
+app.post('/pages/customer', function(req, res)  {
+    var name = req.body.name;
+    var email = req.body.email;
+    var mno = req.body.mno;
+
+    con.getConnection(function(err, tempCont){
+        if(err) {
+            res.send("Error occured.");
+        } 
+        else {
+            var sql = "INSERT INTO customer(customerName, taxId, customerType, email, phone, address) VALUES ?";
+
+            var values =[
+                [customerId, customerName, taxId, customerType, email, phone, address]
+            ];
+
+            con.query(sql, [values],function(err2, result, fields) {
+                if(err2) {console.log(err2);
+                }
+                else {
+                    res.send('Student Register succesfull '+result.insertcustomerId);
+                }
+                // tempCont = release();
+            });
+        }
+    })
+});
+
+app.listen(5500);
