@@ -1,0 +1,65 @@
+.container--socaitk{
+    background-color: #fff;
+    width: 835px;
+    font-size: 15px;
+    // height: 900px;
+    position: relative;
+    margin: 20px auto;
+    align-items: center;
+    // border: 2px solid black;
+    padding: 50px;
+    // box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: 0.2);
+    hr{
+        opacity: 0.5;
+    }
+    .logo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 50%; /* Điều chỉnh kích thước logo tối đa, bạn có thể thay đổi giá trị theo ý muốn */
+        opacity: 0.2; /* Độ mờ của watermark, giá trị từ 0.1 đến 1 */
+        // z-index: -1;
+    }
+    .header{
+        text-align: center;
+        & p{
+            margin-bottom: 0;
+        }
+        .title{
+            font-size: 25px;
+        }
+    }
+    .content{
+        &-service{
+            margin-top: 20px;
+            .table-bordered{
+                max-width: 100%;
+            }
+            .table-bordered th, td{
+                padding: 5px;
+                text-align: center;
+                height: 30px;
+            }
+            .table-bordered td{
+                text-align: right;
+            }
+            .table-bordered td:nth-child(2){
+                text-align: left;
+            }
+            .table-bordered td:nth-child(1){
+                text-align: center;
+            }
+        }
+    }
+    .footer{
+        margin-top: 30px;
+        height: 200px;
+        justify-content: space-between;
+        &-customer,
+        &-company{
+            width: 50%;
+            text-align: center;
+        }
+    }
+}

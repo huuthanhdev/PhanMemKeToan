@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="/img/logo 2me.png"/>
+    <title>2MILLION</title>
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+          <!-- <i class='bx bxl-c-plus-plus'></i> -->
+          <img src="/img/logo 2me.png" alt="" class="logo-img">
+          <span class="logo_name">KẾ TOÁN DTBH</span>
+        </div>
+
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="/home">
+              <i class='fa-solid fa-house'></i>
+              <span class="link_name">Tổng quan</span>
+            </a>
+
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="/home">Tổng quan</a></li>
+            </ul>
+
+          </li>
+          
+          <li class="nav-item">
+            <div class="icon-link">
+              <a href="/danhmuc/khachhang">
+                <i class='fa-solid fa-list-ul' ></i>
+                <span class="link_name">Danh mục</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="/danhmuc/khachhang">Danh mục</a></li>
+              <li><a href="/danhmuc/khachhang">Khách hàng</a></li>
+              <li><a href="/danhmuc/dichvu">Dịch vụ</a></li>
+              <li><a href="/danhmuc/taikhoan">Tài khoản</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item  active">
+            <div class="icon-link">
+              <a href="/chungtu/hoadonGTGT">
+                <i class='fa-solid fa-file-lines' ></i>
+                <span class="link_name">Chứng từ</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="/chungtu/hoadonGTGT">Chứng từ</a></li>
+              <li><a href="/chungtu/hoadonGTGT">Hóa đơn GTGT</a></li>
+              <li><a href="/chungtu/phieuGG">Phiếu giảm giá HB</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">
+              <i class='fa-solid fa-hand-holding-dollar' ></i>
+              <span class="link_name">Doanh thu</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Doanh thu</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item">
+            <div class="icon-link">
+              <a href="#">
+                <i class='fa-solid fa-arrow-trend-up' ></i>
+                <span class="link_name">Báo cáo</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">Báo cáo</a></li>
+              <li><a href="#">Doanh thu theo KH</a></li>
+              <li><a href="#">Doanh thu theo DV</a></li>
+              <li><a href="#">Tổng hợp Doanh thu</a></li>
+              <li><a href="#">Giảm trừ Doanh thu</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">
+              <i class='fa-solid fa-gear' ></i>
+              <span class="link_name">Cài đặt</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Cài đặt</a></li>
+            </ul>
+          </li>
+          <li>
+        <div class="profile-details">
+          <div class="profile-content">
+            <img src="/img/client2.png" alt="profileImg">
+          </div>
+          <div class="name-job">
+            <div class="profile_name">Hữu Thanh</div>
+            <div class="job">Kế toán viên</div>
+          </div>
+          <i class='bx bx-log-out' ></i>
+        </div>
+      </li>
+    </ul>
+      </div>
+    <section class="home-section">
+      <div class="home-nav">
+          <i class='bx bx-menu' ></i>
+          <div class="home-text">
+              <i class="fa-solid fa-circle-check home-icon"></i>
+              <span>Dữ liệu kế toán 2023</span>
+          </div>
+          
+          <div class="home-info">
+              <img src="/img/client2.png" alt="avatar" class="home-avatar">
+              <i class="fa-solid fa-caret-down"class="home-icon"></i>
+          </div>
+      </div>
+      <!-- content -->
+      <div class="home-content">
+        <div class="home-tab">
+          <a class="tab-item active" href="/chungtu/hoadonGTGT">Hóa đơn GTGT</a>
+          <a class="tab-item" href="/chungtu/phieuGG">Phiếu giảm giá hàng bán</a>
+        </div>
+        <hr class="mt-0 mb-4">
+        <!-- table -->
+        <div class="container-fluid mt-0 px-0">
+          <div class="mb-3 d-flex justify-content-start align-items-center">
+              <div class="position-relative">
+                  <span class="position-absolute search"><i class="fa fa-search"></i></span>
+                  <input class="form-control w-100 px-5 m-0" placeholder="Tìm kiếm">
+              </div>
+              <button onclick="openForm()" type="button" class="btn btn-success ms-3">Thêm</button>
+              <div class="filter px-2">   
+                  <span>Lọc <i class="fa fa-angle-down"></i></span>
+                  <i class="fa fa-ellipsis-h ms-3"></i>
+              </div> 
+          </div>
+          <div class="table-responsive">
+          <table class="table table-responsive table-hover bg-light">  
+            <!-- <thead> -->
+              <tr style="background-color: #dadee2">
+                <th scope="col" width="2%"><input class="form-check-input" type="checkbox"></th>
+                <th scope="col" width="8%">Ngày HĐ</th>
+                <th scope="col" width="10%">Số hóa đơn</th>
+                <th scope="col" width="10%">Mã KH</th>
+                <th scope="col" width="20%">Khách hàng</th>
+                <th scope="col" width="15%">Dịch vụ</th>
+                <th scope="col" width="15%">Giá trị hóa đơn</th>
+                <th scope="col" width="20%" class="text-center">Chi tiết</th>
+              </tr>
+            <!-- </thead> -->
+            <!-- body -->
+            <% if(bill.length > 0 ) { %>
+                        
+              <% for(var i = 0; i < bill.length; i++) { %>
+
+                  <tr id= "detailTable">
+                      <th scope="col" width="2%"><input type="checkbox" class="all"/></th>
+                      <td scope="col" width="8%"><%- formatDate(bill[i].NgayCT, 'dd/MM/yyyy') %> </td>
+                      <td scope="col" width="10%"><%- bill[i].SoCT %></td>
+                      <td scope="col" width="10%"><%- bill[i].MaKH %></td>
+                      <td scope="col" width="20%"><%- bill[i].TenKH %></td>
+                      <td scope="col" width="15%"><%- bill[i].MaDV %></td>
+                      <td scope="col" width="15%"><%- bill[i].MaDV %></td>
+                      <td scope="col" width="20%">
+                        <div class="text-center"> 
+                        <a href="?bill=<%-bill[i].SoCT %>" data-bs-toggle="modal" data-bs-target="#billForm_View-<%-bill[i].SoCT %>">
+                          <button class="btn btn-View">
+                            <i class="fa fa-caret-down" style="scale: 0.8;"></i>  Chi tiết
+                          </button>
+                        </a>
+                        
+                        <a href="/chungtu/hoadonGTGT-update?bill=<%-bill[i].SoCT %>">
+                          <button class="btn btn-Update" onclick="openForm_Update()">
+                            <i class="fa fa-pen" style="scale: 0.8;"></i>  Sửa
+                          </button>
+                        </a>
+
+                        <a href="" data-bs-toggle="modal" data-bs-target="#delete-bill-<%-bill[i].SoCT %>">
+                          <button class="btn btn-Delete">
+                            <i class="fa fa-trash" style="scale: 0.8;"></i>  Xóa
+                          </button>
+                        </a>
+                      </div>
+                      <!--  XÁC NHẬN XÓA HÓA ĐƠN-->
+                      <div class="modal" id="delete-bill-<%-bill[i].SoCT %>" tabindex="-1">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">XÁC NHẬN</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p style="text-align: left;font-weight: bold;">Bạn có chắc chắn muốn xóa HÓA ĐƠN <span class="text-success"><%-bill[i].SoCT%></span> không?"</p>
+                            </div>
+                            <div class="modal-footer">
+                              <a href="/chungtu/hoadonGTGT-delete?bill=<%-bill[i].SoCT%>">
+                                <button type="button" class="btn btn-danger">Xóa</button>
+                              </a>
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- //XÁC NHẬN XÓA HÓA ĐƠN-->
+                      
+                      <!-- XEM CHI TIẾT -->
+                      <div class="modal form-popup--bill" id="billForm_View-<%-bill[i].SoCT %>" tabindex="-1">
+                      <div class="modal-dialog"></div>
+                      <form class="form-container" method="post">
+                      <h2>Hóa đơn GTGT <button class="btn btn-success p-0" style="color: white; background-color: #198754;" disabled>Xem</button> </h2>
+                      <!-- <hr bg-dark> -->
+                      <div class="form-content">
+                      <fieldset class="form-left">
+                      <legend>Thông tin chung</legend>
+                      <div class="bill">
+                          <label for="bill"><b>Số HĐ</b></label>
+                          <input id="bill" type="text" value="<%- bill[i].SoCT %>" name="bill" placeholder="Nhập số HĐ" readonly>
+                      </div>            
+                      <div class="customerId">
+                        <label for="customerId"><b>Mã khách hàng</b> <b style="color: red;">*</b>
+                        </label>
+                        <input id="customerId" type="text" value="<%- bill[i].MaKH %>" placeholder="Nhập mã khách hàng" name="customerId" readonly>
+                      </div>
+                      <div class="customerName">
+                        <label for="customerName"><b>Tên khách hàng</b> <b style="color: red;">*</b></label>
+                        <input id="customerName" type="text" value="<%-bill[i].TenKH %>" placeholder="Nhập tên khách hàng" name="customerName" readonly>
+                      </div>
+                      <div class="address">
+                        <label for="address"><b>Địa chỉ</b></label>
+                        <input id="address" type="textarea" value="<%-bill[i].DiaChi %>" placeholder="Nhập địa chỉ" name="address" readonly>
+                      </div>
+                      <div class="taxId">
+                          <label for="taxId"><b>Mã số thuế</b></label>
+                          <input id="taxId" type="text" value="<%-bill[i].MaSoThue %>" placeholder="Nhập mã số thuế" name="taxId" readonly>
+                      </div>
+                      <div class="paymentType">
+                          <label for="paymentType"><b>HTTT</b></label>
+                        <select type="text" name="lang" id="paymentType" value="<%-bill[i].HTTT %>" readonly>
+                          <option value="">--TM/CK--</option>
+                          <option value="Tiền mặt">Tiền mặt</option>
+                          <option value="Chuyển khoản">Chuyển khoản</option>
+                          </select>
+                      </div>
+                      <div class="STK">
+                          <label for="STK"><b>STK Ngân hàng</b></label>
+                          <input id="STK" type="number" value="<%-bill[i].STK %>" name="STK" readonly>
+                      </div>
+                      <div class="NH">
+                          <label for="NH"><b>Ngân hàng</b></label>
+                          <input id="NH" type="text" value="<%-bill[i].NH %>" name="NH" readonly>
+                      </div>
+                      </fieldset>
+                      
+                      <fieldset class="form-right">
+                      <legend>Khác</legend>
+                      <div class="date">
+                        <label for="text"><b>Ngày CT</b></label>
+                        <input id="date" type="text" name="date" value="<%-bill[i].NgayCT %>" readonly >
+                      </div>
+                      <div class="TKNoTT">
+                        <label for="TKNoTT"><b>TK Nợ TT</b></label>
+                        <input id="TKNoTT" type="number" value="<%-bill[i].TKNoTT %>" name="TKNoTT" readonly>
+                      </div>
+                      <div class="TKCoDT">
+                        <label for="TKCoDT"><b>TK Có DT</b></label>
+                        <input id="TKCoTT" type="number" value="<%-bill[i].TKCoDT %>" name="TKCoDT" readonly>
+                      </div>
+                      <div class="TKCoThue">
+                        <label for="TKCoThue"><b>TK Có Thuế</b></label>
+                        <input id="TKCoThue" type="number" value="<%-bill[i].TKCoThue %>" name="TKCoThue" readonly>
+                      </div>
+                      <div class="tax">
+                        <label for="tax"><b>Thuế suất</b></label>
+                        <input id="tax" type="number" value="<%-bill[i].ThueSuat %>" name="tax" readonly>
+                      </div>
+                      <div class="TKCK">
+                        <label for="TKCK"><b>TK Chiết khấu</b></label>
+                        <input id="TKCK" type="number" name="TKCK" readonly>
+                      </div>
+                      <div class="TLCK">
+                          <label for="TLCK"><b>Tỷ lệ Chiết khấu</b></label>
+                          <input id="TLCK" type="number" name="TLCK" readonly>
+                      </div>
+                      </fieldset>
+                      </div>
+                      <div class="table-responsive">
+                      <table class="table table-responsive table-hover bg-light">  
+                      <thead>
+                      <tr style="background-color: #dadee2">
+                        <th scope="col" width="5%">STT</th>
+                        <th scope="col" width="10%">Mã dịch vụ</th>
+                        <th scope="col" width="30%">Tên dịch vụ</th>
+                        <th scope="col" width="15%">Số lượng</th>
+                        <th scope="col" width="20%">Đơn giá</th>
+                        <th scope="col" width="20%">Thành tiền</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                        <td> <input type="text"> </td>
+                        <td> <input id="MaDV" type="text" readonly> </td>
+                        <td> <input id="TenDV" type="text" readonly> </td>
+                        <td> <input id="SoLuong" type="text" readonly> </td>
+                        <td> <input id="DonGia" type="text" readonly> </td>
+                        <td> <output id="ThanhTien" type="text" readonly> 1.000.000 </output> </td>
+                      </tbody>
+                      </table>
+                      </div>
+                      <div class="total">
+                      <div class="label-total-amount">
+                      <ul>
+                        <li>Tổng tiền hàng</li>
+                        <li>Thuế GTGT</li>
+                        <li>Tổng tiền thanh toán</li>
+                      </ul>
+                      </div>
+                      <div class="total-amount">
+                      <ul>
+                        <li>0</li>
+                        <li>0</li>
+                        <li>0</li>
+                      </ul>
+                      </div>
+                      </div>
+                      
+                      <button type="submit" class="btn save">Sửa</button>
+                      <button type="button" class="btn cancel"  data-bs-dismiss="modal">Hủy</button>
+                      <a href="/chungtu/hoadonGTGT-preview?bill=<%-bill[i].SoCT %>" class="print-url" target="_blank">
+                      <button type="button" class="btn print">
+                        <i class="fa-solid fa-print"></i>
+                      </button>
+                      </a>
+                      <!-- <button type="button" class="btn print" onclick="openForm()">
+                      <i class="fa-solid fa-print"></i>
+                      </button> -->
+                      <button type="button" class="btn close" data-bs-dismiss="modal"><i class="fa-solid fa-close"></i></button>
+                      </form>
+                      </div>
+                      <!-- //XEM CHI TIẾT-->
+                      </td>
+                    </tr>
+                    <% } %>
+                    <%} else{ %>
+                      <h1>Không tìm thấy hóa đơn GTGT!</h1>
+                    <%} %>
+                    <!-- //body -->
+                    </table> 
+                  </div>    
+                </div>
+                <!-- //table -->
+                <!-- pagination -->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-end">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Trước</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Sau</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- //pagination -->
+        
+      </div>
+    </section>
+
+    <!-- popup -->
+    <div class="form-popup--bill" id="billForm">
+      <div class="bg-popup"></div>
+      <form class="form-container" method="post">
+        <h2>Hóa đơn GTGT</h2>
+        <!-- <hr bg-dark> -->
+        <div class="form-content">
+        <fieldset class="form-left">
+            <legend>Thông tin chung</legend>
+            <div class="bill">
+                <label for="bill"><b>Số HĐ <b style="color: red;">*</b> </b></label>
+                <input id="bill" type="text" name="bill" placeholder="Nhập số HĐ" required>
+            </div>            
+            <div class="customerId">
+              <label for="customerId"><b>Mã khách hàng</b> <b style="color: red;">*</b>
+              </label>
+              <input id="customerId" type="text" placeholder="Nhập mã khách hàng" name="customerId" required>
+            </div>
+            <div class="customerName">
+              <label for="customerName"><b>Tên khách hàng</b> <b style="color: red;">*</b></label>
+              <input id="customerName" type="text" placeholder="Nhập tên khách hàng" name="customerName">
+            </div>
+            <div class="address">
+              <label for="address"><b>Địa chỉ</b></label>
+              <input id="address" type="textarea" placeholder="Nhập địa chỉ" name="address">
+            </div>
+            <div class="taxId">
+                <label for="taxId"><b>Mã số thuế</b></label>
+                <input id="taxId" type="text" placeholder="Nhập mã số thuế" name="taxId">
+            </div>
+            <div class="paymentType">
+                <label for="paymentType"><b>HTTT</b></label>
+              <select name="lang" id="paymentType">
+                <option value="">--TM/CK--</option>
+                <option value="Tiền mặt">Tiền mặt</option>
+                <option value="Chuyển khoản">Chuyển khoản</option>
+                </select>
+            </div>
+            <div class="STK">
+                <label for="STK"><b>STK Ngân hàng</b></label>
+                <input id="STK" type="number" name="STK">
+            </div>
+            <div class="NH">
+                <label for="NH"><b>Ngân hàng</b></label>
+                <input id="NH" type="text" name="NH">
+            </div>
+        </fieldset>
+
+        <fieldset class="form-right">
+            <legend>Khác</legend>
+            <div class="date">
+              <label for="date"><b>Ngày CT</b></label>
+              <input id="date" type="date" name="date">
+            </div>
+            <div class="TKNoTT">
+              <label for="TKNoTT"><b>TK Nợ TT</b></label>
+              <input id="TKNoTT" type="number" name="TKNoTT">
+            </div>
+            <div class="TKCoDT">
+              <label for="TKCoDT"><b>TK Có DT</b></label>
+              <input id="TKCoTT" type="number" name="TKCoDT">
+            </div>
+            <div class="TKCoThue">
+              <label for="TKCoThue"><b>TK Có Thuế</b></label>
+              <input id="TKCoThue" type="number" name="TKCoThue">
+            </div>
+            <div class="tax">
+              <label for="tax"><b>Thuế suất</b></label>
+              <input id="tax" type="number" name="tax">
+            </div>
+            <div class="TKCK">
+              <label for="TKCK"><b>TK Chiết khấu</b></label>
+              <input id="TKCK" type="number" name="TKCK">
+            </div>
+            <div class="TLCK">
+                <label for="TLCK"><b>Tỷ lệ Chiết khấu</b></label>
+                <input id="TLCK" type="number" name="TLCK">
+            </div>
+        </fieldset>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-responsive table-hover bg-light">  
+          <thead>
+            <tr style="background-color: #dadee2">
+              <th scope="col" width="5%">STT</th>
+              <th scope="col" width="10%">Mã dịch vụ</th>
+              <th scope="col" width="30%">Tên dịch vụ</th>
+              <th scope="col" width="15%">Số lượng</th>
+              <th scope="col" width="20%">Đơn giá</th>
+              <th scope="col" width="20%">Thành tiền</th>
+            </tr>
+          </thead>
+          <tbody>
+            <td> <input type="text"> </td>
+            <td> <input type="text" id="serviceId" name="serviceId" type="text"> </td>
+            <td> <input id="serviceName" type="text"> </td>
+            <td> <input id="serviceNumber" type="number"> </td>
+            <td> <input id="servicePrice" type="number"> </td>
+            <td> <input type="text" id="TienDV" readonly onfocus="calc()"> </td>
+          </tbody>
+        </table>
+      </div>
+
+        <div class="label-total-amount">
+          <span> Tổng tiền dịch vụ</span>     <input type="text" id="TienDT"></input>
+          <span> Thuế GTGT</span>             <input type="text" id="TienThue"></input>
+          <span> Tổng tiền thanh toán</span>  <input type="text" id="TienTT"></input>
+        </div>
+        
+        <button type="submit" class="btn save">Lưu</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Hủy</button>
+        <button type="button" class="btn close" onclick="closeForm()"><i class="fa-solid fa-close"></i></button>
+      </form>
+    </div>
+    <!-- //popup -->
+
+    <!-- popup VIEW-->
+    <div class="form-popup--bill" id="billForm_View">
+      <div class="bg-popup"></div>
+      <form class="form-container" method="post">
+        <h2>Hóa đơn GTGT</h2>
+        <!-- <hr bg-dark> -->
+        <div class="form-content">
+        <fieldset class="form-left">
+            <legend>Thông tin chung</legend>
+            <div class="bill">
+                <label for="bill"><b>Số HĐ</b></label>
+                <input id="bill" type="text" value="<%= bill[0].SoCT %>" name="bill" placeholder="Nhập số HĐ" required>
+            </div>            
+            <div class="customerId">
+              <label for="customerId"><b>Mã khách hàng</b> <b style="color: red;">*</b>
+              </label>
+              <input id="customerId" type="text" value="<%= bill[0].MaKH %>" placeholder="Nhập mã khách hàng" name="customerId" required>
+            </div>
+            <div class="customerName">
+              <label for="customerName"><b>Tên khách hàng</b> <b style="color: red;">*</b></label>
+              <input id="customerName" type="text" placeholder="Nhập tên khách hàng" value="<%= bill[0].TenKH %>" name="customerName">
+            </div>
+            <div class="address">
+              <label for="address"><b>Địa chỉ</b></label>
+              <input id="address" type="textarea" placeholder="Nhập địa chỉ" name="address">
+            </div>
+            <div class="taxId">
+                <label for="taxId"><b>Mã số thuế</b></label>
+                <input id="taxId" type="text" placeholder="Nhập mã số thuế" name="taxId" required>
+            </div>
+            <div class="paymentType">
+                <label for="paymentType"><b>HTTT</b></label>
+              <select name="lang" id="paymentType">
+                <option value="">--TM/CK--</option>
+                <option value="Tiền mặt">Tiền mặt</option>
+                <option value="Chuyển khoản">Chuyển khoản</option>
+                </select>
+            </div>
+            <div class="STK">
+                <label for="STK"><b>STK Ngân hàng</b></label>
+                <input id="STK" type="number" name="STK">
+            </div>
+            <div class="NH">
+                <label for="NH"><b>Ngân hàng</b></label>
+                <input id="NH" type="text" name="NH">
+            </div>
+        </fieldset>
+
+        <fieldset class="form-right">
+            <legend>Khác</legend>
+            <div class="date">
+              <label for="date"><b>Ngày CT</b></label>
+              <input id="date" type="date" name="date">
+            </div>
+            <div class="TKNoTT">
+              <label for="TKNoTT"><b>TK Nợ TT</b></label>
+              <input id="TKNoTT" type="number" name="TKNoTT">
+            </div>
+            <div class="TKCoDT">
+              <label for="TKCoDT"><b>TK Có DT</b></label>
+              <input id="TKCoTT" type="number" name="TKCoDT">
+            </div>
+            <div class="TKCoThue">
+              <label for="TKCoThue"><b>TK Có Thuế</b></label>
+              <input id="TKCoThue" type="number" name="TKCoThue">
+            </div>
+            <div class="tax">
+              <label for="tax"><b>Thuế suất</b></label>
+              <input id="tax" type="number" name="tax">
+            </div>
+            <div class="TKCK">
+              <label for="TKCK"><b>TK Chiết khấu</b></label>
+              <input id="TKCK" type="number" name="TKCK">
+            </div>
+            <div class="TLCK">
+                <label for="TLCK"><b>Tỷ lệ Chiết khấu</b></label>
+                <input id="TLCK" type="number" name="TLCK">
+            </div>
+        </fieldset>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-responsive table-hover bg-light">  
+          <thead>
+            <tr style="background-color: #dadee2">
+              <th scope="col" width="5%">STT</th>
+              <th scope="col" width="10%">Mã dịch vụ</th>
+              <th scope="col" width="30%">Tên dịch vụ</th>
+              <th scope="col" width="15%">Số lượng</th>
+              <th scope="col" width="20%">Đơn giá</th>
+              <th scope="col" width="20%">Thành tiền</th>
+            </tr>
+          </thead>
+          <tbody>
+            <td> <input type="text"> </td>
+            <td> <input id="MaDV" type="text"> </td>
+            <td> <input id="TenDV" type="text"> </td>
+            <td> <input id="SoLuong" type="text"> </td>
+            <td> <input id="DonGia" type="text"> </td>
+            <td disabled="disabled">1.000.000 </td>
+          </tbody>
+        </table>
+      </div>
+      <div class="total">
+        <div class="label-total-amount">
+          <ul>
+            <li>Tổng tiền hàng</li>
+            <li>Thuế GTGT</li>
+            <li>Tổng tiền thanh toán</li>
+          </ul>
+        </div>
+        <div class="total-amount">
+          <ul>
+            <li>0</li>
+            <li>0</li>
+            <li>0</li>
+          </ul>
+        </div>
+      </div>
+        
+        <button type="submit" class="btn save">Lưu</button>
+        <button type="button" class="btn cancel" onclick="closeForm_View()">Hủy</button>
+        <a href="/chungtu/hoadonGTGT-preview" class="print-url" target="_blank">
+          <button type="button" class="btn print">
+              <i class="fa-solid fa-print"></i>
+          </button>
+        </a>
+        <!-- <button type="button" class="btn print" onclick="openForm()">
+          <i class="fa-solid fa-print"></i>
+        </button> -->
+        <button type="button" class="btn close" onclick="closeForm_View()"><i class="fa-solid fa-close"></i></button>
+      </form>
+    </div>
+    <!-- //popup -->
+    <script src="/bill.js"></script>
+    <script src="/app.js"></script>
+    <script src="/bootstrap.min.js"></script>
+    
+    
+</body>
+</html>

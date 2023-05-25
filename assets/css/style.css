@@ -347,21 +347,29 @@ body a {
 .home-content {
   margin: 20px; }
   .home-content a .btn-Update,
-  .home-content a .btn-Delete {
+  .home-content a .btn-Delete,
+  .home-content a .btn-View {
     font-size: 12px;
     border: none;
     border-radius: 5px;
     color: #25282c;
     opacity: 0.7;
     background-color: none; }
+  .home-content a .btn-View:hover {
+    color: #198754;
+    opacity: 1;
+    scale: 1.2;
+    font-weight: bold; }
   .home-content a .btn-Update:hover {
     color: #0077ff;
     opacity: 1;
-    scale: 1.2; }
+    scale: 1.2;
+    font-weight: bold; }
   .home-content a .btn-Delete:hover {
     color: #ff0000;
     opacity: 1;
-    scale: 1.2; }
+    scale: 1.2;
+    font-weight: bold; }
 
 .table-hover {
   transition: .5s ease-in-out; }
@@ -442,7 +450,7 @@ body a {
   margin-bottom: 5px;
   outline-color: #198754; }
 
-.form-popup--customer .form-container #btnClose {
+.form-popup--customer .form-container .close {
   color: black;
   border: none;
   cursor: pointer;
@@ -453,11 +461,11 @@ body a {
   right: 0;
   margin-top: 10px;
   transition: all 0.2s ease-in-out; }
-  .form-popup--customer .form-container #btnClose:hover {
+  .form-popup--customer .form-container .close:hover {
     transform: rotate(90deg) scale(1.3);
     color: #c00000 !important; }
 
-.form-popup--customer .form-container #btnSave {
+.form-popup--customer .form-container .save {
   background-color: #198754;
   color: white;
   border: none;
@@ -465,18 +473,19 @@ body a {
   cursor: pointer;
   padding: 5px;
   float: right;
-  width: 60px;
+  max-width: 100px;
+  min-width: 60px;
   margin-top: 40px;
   margin-right: auto;
   font-weight: bold;
   transition: all 0.1s ease-in; }
 
-.form-popup--customer .form-container #btnSave:hover {
+.form-popup--customer .form-container .save:hover {
   background-color: #1a764b !important;
   color: #fff !important;
   transform: scale(1.02); }
 
-.form-popup--customer .form-container #btnCancel {
+.form-popup--customer .form-container .cancel {
   background-color: #ddd;
   color: black;
   border: none;
@@ -490,7 +499,7 @@ body a {
   font-weight: bold;
   transition: all 0.1s ease-in; }
 
-.form-popup--customer .form-container #btnCancel:hover {
+.form-popup--customer .form-container .cancel:hover {
   background-color: rgba(221, 221, 221, 0.5) !important;
   color: #c00000 !important;
   transform: scale(1.02); }
@@ -576,6 +585,19 @@ body a {
     color: #198754;
     font-weight: bold;
     margin-left: 65px; }
+  .home-content--overview .charts {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    width: 100%;
+    padding: 30px 0;
+    max-height: 565px; }
+  .home-content--overview .chart {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.08);
+    width: 100%; }
 
 .form-popup--service {
   display: none;
@@ -607,7 +629,7 @@ body a {
   text-align: left;
   margin-top: 0; }
 
-.form-popup--service .form-container input[type=text], .form-popup--service input[type=email], .form-popup--service input[type=tel], .form-popup--service input[type=textarea], .form-popup--service select[name=lang], .form-popup--service input[type="number"] {
+.form-popup--service .form-container input[type=text], .form-popup--service input[type=email], .form-popup--service input[type=tel], .form-popup--service input[type=textarea], .form-popup--service select[name=serviceType], .form-popup--service input[type="number"] {
   width: 100%;
   padding: 5px;
   border: 0.5px solid #ccc;
@@ -616,7 +638,7 @@ body a {
   margin-bottom: 5px;
   outline-color: #198754; }
 
-.form-popup--service .form-container #btnClose {
+.form-popup--service .form-container .close {
   color: black;
   border: none;
   cursor: pointer;
@@ -627,11 +649,11 @@ body a {
   right: 0;
   margin-top: 10px;
   transition: all 0.2s ease-in-out; }
-  .form-popup--service .form-container #btnClose:hover {
+  .form-popup--service .form-container .close:hover {
     transform: rotate(90deg) scale(1.3);
     color: #c00000 !important; }
 
-.form-popup--service .form-container #btnSave {
+.form-popup--service .form-container .save {
   background-color: #198754;
   color: white;
   border: none;
@@ -639,18 +661,19 @@ body a {
   cursor: pointer;
   padding: 5px;
   float: right;
-  width: 60px;
+  max-width: 100px;
+  min-width: 60px;
   margin-top: 40px;
   margin-right: auto;
   font-weight: bold;
   transition: all 0.1s ease-in; }
 
-.form-popup--service .form-container #btnSave:hover {
+.form-popup--service .form-container .save:hover {
   background-color: #1a764b !important;
   color: #fff !important;
   transform: scale(1.02); }
 
-.form-popup--service .form-container #btnCancel {
+.form-popup--service .form-container .cancel {
   background-color: #ddd;
   color: black;
   border: none;
@@ -664,7 +687,7 @@ body a {
   font-weight: bold;
   transition: all 0.1s ease-in; }
 
-.form-popup--service .form-container #btnCancel:hover {
+.form-popup--service .form-container .cancel:hover {
   background-color: rgba(221, 221, 221, 0.5) !important;
   color: #c00000 !important;
   transform: scale(1.02); }
@@ -721,7 +744,7 @@ body a {
   text-align: left;
   margin-top: 0; }
 
-.form-popup--account .form-container input[type=text], .form-popup--account input[type=email], .form-popup--account input[type=tel], .form-popup--account input[type=textarea], .form-popup--account select[name=lang], .form-popup--account input[type="number"] {
+.form-popup--account .form-container input[type=text], .form-popup--account input[type=email], .form-popup--account input[type=tel], .form-popup--account input[type=textarea], .form-popup--account select[name=accountLevel], .form-popup--account input[type="number"] {
   width: 100%;
   padding: 5px;
   border: 0.5px solid #ccc;
@@ -730,7 +753,7 @@ body a {
   margin-bottom: 5px;
   outline-color: #198754; }
 
-.form-popup--account .form-container #btnClose {
+.form-popup--account .form-container .close {
   color: black;
   border: none;
   cursor: pointer;
@@ -741,11 +764,11 @@ body a {
   right: 0;
   margin-top: 10px;
   transition: all 0.2s ease-in-out; }
-  .form-popup--account .form-container #btnClose:hover {
+  .form-popup--account .form-container .close:hover {
     transform: rotate(90deg) scale(1.3);
     color: #c00000 !important; }
 
-.form-popup--account .form-container #btnSave {
+.form-popup--account .form-container .save {
   background-color: #198754;
   color: white;
   border: none;
@@ -753,18 +776,19 @@ body a {
   cursor: pointer;
   padding: 5px;
   float: right;
-  width: 60px;
+  max-width: 100px;
+  min-width: 60px;
   margin-top: 40px;
   margin-right: auto;
   font-weight: bold;
   transition: all 0.1s ease-in; }
 
-.form-popup--account .form-container #btnSave:hover {
+.form-popup--account .form-container .save:hover {
   background-color: #1a764b !important;
   color: #fff !important;
   transform: scale(1.02); }
 
-.form-popup--account .form-container #btnCancel {
+.form-popup--account .form-container .cancel {
   background-color: #ddd;
   color: black;
   border: none;
@@ -778,7 +802,7 @@ body a {
   font-weight: bold;
   transition: all 0.1s ease-in; }
 
-.form-popup--account .form-container #btnCancel:hover {
+.form-popup--account .form-container .cancel:hover {
   background-color: rgba(221, 221, 221, 0.5) !important;
   color: #c00000 !important;
   transform: scale(1.02); }
@@ -789,15 +813,15 @@ body a {
   grid-template-rows: 70px 70px;
   grid-gap: 5px 25px; }
 
-.form-popup--account .form-content .account-id {
+.form-popup--account .form-content .accountId {
   grid-column: 1/2;
   grid-row: 1/2; }
 
-.form-popup--account .form-content .account-level {
+.form-popup--account .form-content .accounLevel {
   grid-column: 2/3;
   grid-row: 1/2; }
 
-.form-popup--account .form-content .account-name {
+.form-popup--account .form-content .accountName {
   grid-column: 1/3;
   grid-row: 2/3; }
 
@@ -932,6 +956,10 @@ body a {
   grid-column: 2/4;
   grid-row: 1/2; }
 
+.form-popup--bill .form-left .paymentType {
+  grid-column: 1/2;
+  grid-row: 4/5; }
+
 .form-popup--bill .form-left .address {
   grid-column: 1/4;
   grid-row: 3/4; }
@@ -980,33 +1008,46 @@ body a {
 
 .form-popup--bill .total {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
-  margin-left: 810px;
+  justify-content: flex-end;
+  margin-right: 0 auto; }
+  .form-popup--bill .total-text {
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 10px; }
+  .form-popup--bill .total-value {
+    width: 200px; }
+
+.form-popup--bill .label-total-amount {
+  margin-left: 840px;
   margin-top: 20px; }
-  .form-popup--bill .total .label-total-amount ul,
-  .form-popup--bill .total .total-amount ul {
-    padding-left: 0; }
-  .form-popup--bill .total .label-total-amount ul > li,
-  .form-popup--bill .total .total-amount ul > li {
-    list-style: none; }
-  .form-popup--bill .total .label-total-amount ul > li:nth-child(3),
-  .form-popup--bill .total .total-amount ul > li:nth-child(3) {
+  .form-popup--bill .label-total-amount input {
+    width: 100px;
+    height: 30px; }
+  .form-popup--bill .label-total-amount span {
+    list-style: none;
+    display: inline-block;
     font-weight: bold; }
-  .form-popup--bill .total .total-amount ul > li {
-    text-align: right; }
 
 .container--hoadonGTGT {
   background-color: #fff;
   width: 835px;
+  font-size: 15px;
   position: relative;
   margin: 20px auto;
   align-items: center;
-  border: 2px solid black;
-  padding: 20px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); }
+  padding: 50px; }
   .container--hoadonGTGT hr {
     opacity: 0.5; }
+  .container--hoadonGTGT .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+    /* Điều chỉnh kích thước logo tối đa, bạn có thể thay đổi giá trị theo ý muốn */
+    opacity: 0.2;
+    /* Độ mờ của watermark, giá trị từ 0.1 đến 1 */ }
   .container--hoadonGTGT .header {
     text-align: center; }
     .container--hoadonGTGT .header p {
@@ -1020,7 +1061,7 @@ body a {
     .container--hoadonGTGT .content-service .table-bordered th, .container--hoadonGTGT .content-service td {
       padding: 5px;
       text-align: center;
-      height: 36px; }
+      height: 30px; }
     .container--hoadonGTGT .content-service .table-bordered td {
       text-align: right; }
     .container--hoadonGTGT .content-service .table-bordered td:nth-child(2) {
@@ -1032,5 +1073,102 @@ body a {
     height: 200px;
     justify-content: space-between; }
     .container--hoadonGTGT .footer-customer, .container--hoadonGTGT .footer-company {
+      width: 50%;
+      text-align: center; }
+
+.container--socaitk {
+  background-color: #fff;
+  width: 1200px;
+  font-size: 15px;
+  max-height: 848px;
+  min-height: 648px;
+  position: relative;
+  margin: 20px auto;
+  align-items: center;
+  padding: 50px; }
+  .container--socaitk hr {
+    opacity: 0.5; }
+  .container--socaitk .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+    /* Điều chỉnh kích thước logo tối đa, bạn có thể thay đổi giá trị theo ý muốn */
+    opacity: 0.05;
+    /* Độ mờ của watermark, giá trị từ 0.1 đến 1 */ }
+  .container--socaitk .header {
+    text-align: center; }
+    .container--socaitk .header p {
+      margin-bottom: 0; }
+    .container--socaitk .header .title {
+      font-size: 25px; }
+  .container--socaitk .content-socaitk {
+    margin-top: 20px; }
+    .container--socaitk .content-socaitk .table-bordered {
+      max-width: 100%; }
+    .container--socaitk .content-socaitk .table-bordered th, .container--socaitk .content-socaitk td {
+      padding: 5px;
+      text-align: center;
+      height: 30px; }
+    .container--socaitk .content-socaitk .table-bordered td {
+      text-align: right; }
+    .container--socaitk .content-socaitk .table-bordered td:nth-child(2) {
+      text-align: left; }
+    .container--socaitk .content-socaitk .table-bordered td:nth-child(1) {
+      text-align: center; }
+  .container--socaitk .footer {
+    margin-top: 30px;
+    height: 200px;
+    justify-content: space-between; }
+    .container--socaitk .footer-customer, .container--socaitk .footer-company {
+      width: 50%;
+      text-align: center; }
+
+.container--baocaoTH {
+  background-color: #fff;
+  width: 835px;
+  font-size: 15px;
+  min-height: 800px;
+  position: relative;
+  margin: 20px auto;
+  align-items: center;
+  padding: 50px; }
+  .container--baocaoTH hr {
+    opacity: 0.5; }
+  .container--baocaoTH .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+    /* Điều chỉnh kích thước logo tối đa, bạn có thể thay đổi giá trị theo ý muốn */
+    opacity: 0.05;
+    /* Độ mờ của watermark, giá trị từ 0.1 đến 1 */ }
+  .container--baocaoTH .header {
+    text-align: center; }
+    .container--baocaoTH .header p {
+      margin-bottom: 0; }
+    .container--baocaoTH .header .title {
+      font-size: 25px; }
+  .container--baocaoTH .content-baocaoTH {
+    margin-top: 20px; }
+    .container--baocaoTH .content-baocaoTH .table-bordered {
+      max-width: 100%; }
+    .container--baocaoTH .content-baocaoTH .table-bordered th, .container--baocaoTH .content-baocaoTH td {
+      padding: 5px;
+      text-align: center;
+      height: 30px; }
+    .container--baocaoTH .content-baocaoTH .table-bordered td {
+      text-align: right; }
+    .container--baocaoTH .content-baocaoTH .table-bordered td:nth-child(2) {
+      text-align: left; }
+    .container--baocaoTH .content-baocaoTH .table-bordered td:nth-child(1) {
+      text-align: center; }
+  .container--baocaoTH .footer {
+    margin-top: 30px;
+    height: 200px;
+    justify-content: space-between; }
+    .container--baocaoTH .footer-customer, .container--baocaoTH .footer-company {
       width: 50%;
       text-align: center; }

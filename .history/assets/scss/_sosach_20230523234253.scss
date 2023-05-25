@@ -1,0 +1,16 @@
+.form-container .save,
+.form-container .print{
+    float: right;
+    width: 55px;
+    margin-top: 20px;
+    margin-left: 10px;
+    transition: all 0.1s ease-in;
+}
+.form-container .save{
+    background-color: #198754 !important;
+    color: #fff !important;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        background-color: #13663f !important;
+    }
+}

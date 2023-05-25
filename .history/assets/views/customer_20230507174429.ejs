@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="/img/logo 2me.png"/>
+    <title>2MILLION</title>
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+          <!-- <i class='bx bxl-c-plus-plus'></i> -->
+          <img src="/img/logo 2me.png" alt="" class="logo-img">
+          <span class="logo_name">KẾ TOÁN DTBH</span>
+        </div>
+
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="/home">
+              <i class='fa-solid fa-house'></i>
+              <span class="link_name">Tổng quan</span>
+            </a>
+
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="/home">Tổng quan</a></li>
+            </ul>
+
+          </li>
+          
+          <li class="nav-item active">
+            <div class="icon-link">
+              <a href="/danhmuc/khachhang">
+                <i class='fa-solid fa-list-ul' ></i>
+                <span class="link_name">Danh mục</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="/danhmuc/khachhang">Danh mục</a></li>
+              <li><a href="/danhmuc/khachhang">Khách hàng</a></li>
+              <li><a href="/service.html">Dịch vụ</a></li>
+              <li><a href="/account.html">Tài khoản</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item">
+            <div class="icon-link">
+              <a href="/bill.html">
+                <i class='fa-solid fa-file-lines' ></i>
+                <span class="link_name">Chứng từ</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="/bill.html">Chứng từ</a></li>
+              <li><a href="/bill.html">Hóa đơn GTGT</a></li>
+              <li><a href="/coupon.html">Phiếu giảm giá HB</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">
+              <i class='fa-solid fa-hand-holding-dollar' ></i>
+              <span class="link_name">Doanh thu</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Doanh thu</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item">
+            <div class="icon-link">
+              <a href="#">
+                <i class='fa-solid fa-arrow-trend-up' ></i>
+                <span class="link_name">Báo cáo</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">Báo cáo</a></li>
+              <li><a href="#">Doanh thu theo KH</a></li>
+              <li><a href="#">Doanh thu theo DV</a></li>
+              <li><a href="#">Tổng hợp Doanh thu</a></li>
+              <li><a href="#">Giảm trừ Doanh thu</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">
+              <i class='fa-solid fa-gear' ></i>
+              <span class="link_name">Cài đặt</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Cài đặt</a></li>
+            </ul>
+          </li>
+          <li>
+        <div class="profile-details">
+          <div class="profile-content">
+            <img src="/img/client2.png" alt="profileImg">
+          </div>
+          <div class="name-job">
+            <div class="profile_name">Hữu Thanh</div>
+            <div class="job">Kế toán viên</div>
+          </div>
+          <i class='bx bx-log-out' ></i>
+        </div>
+      </li>
+    </ul>
+      </div>
+    <section class="home-section">
+      <div class="home-nav">
+          <i class='bx bx-menu' ></i>
+          <div class="home-text">
+              <i class="fa-solid fa-circle-check home-icon"></i>
+              <span>Dữ liệu kế toán 2023</span>
+          </div>
+          
+          <div class="home-info">
+              <img src="/img/client2.png" alt="avatar" class="home-avatar">
+              <i class="fa-solid fa-caret-down"class="home-icon"></i>
+          </div>
+      </div>
+      <!-- content -->
+      <div class="home-content">
+        <div class="home-tab">
+          <a class="tab-item active" href="/customer.html">Khách hàng</a>
+          <a class="tab-item" href="/service.html">Dịch vụ</a>
+          <a class="tab-item" href="/account.html">Hệ thống tài khoản</a>
+        </div>
+        <hr class="mt-0 mb-4">
+        <!-- table -->
+        <div class="container-fluid mt-0 px-0">
+          <div class="mb-3 d-flex justify-content-start align-items-center">
+              <div class="position-relative">
+                  <span class="position-absolute search"><i class="fa fa-search"></i></span>
+                  <input type="text" id="inputSearch" class="form-control w-100 px-5 m-0" onkeyup="doSearch()" placeholder="Tìm kiếm">
+                </div>
+                <button onclick="openForm()" type="button" class="btn btn-success ms-3">
+                  <i class="fa fa-plus"></i>  Thêm
+                </button>
+              <div class="filter px-2">   
+                  <span>Lọc <i class="fa fa-angle-down"></i></span>
+                  <i class="fa fa-ellipsis-h ms-3"></i>
+              </div> 
+          </div>
+          <div class="table-responsive">
+          <table id= "customerTable" class="table table-responsive table-hover bg-light">  
+            <!-- <thead> -->
+              <tr id= "detailTable" style="background-color: #dadee2">
+                <th scope="col" width="3%"><input type="checkbox" class="all" onclick="javascript:checkAll(this)"/></th>
+                <th scope="col" width="5%">#</th>
+                <th scope="col" width="20%">Tên khách hàng</th>
+                <th scope="col" width="7%">Điện thoại</th>
+                <th scope="col" width="15%">Email</th>
+                <th scope="col" width="10%">Mã số thuế</th>
+                <th scope="col" width="20%">Điạ chỉ</th>
+                <th scope="col" width="5%">Hình thức</th>
+                <th scope="col" width="15%" class="text-center">Thao tác</th>
+              </tr>
+            <!-- </thead> -->
+            <!-- body -->
+            <% if(customer.length > 0 ) { %>
+            
+                <% for(var i = 0; i < customer.length; i++) { %>
+
+                    <tr id= "detailTable">
+                        <th scope="col" width="3%"><input type="checkbox" class="all"/></th>
+                        <td scope="col" width="5%"><%- customer[i].customerId %></td>
+                        <td scope="col" width="20%"><%- customer[i].customerName %></td>
+                        <td scope="col" width="7%"><%- customer[i].phone %></td>
+                        <td scope="col" width="15%"><%- customer[i].email %></td>
+                        <td scope="col" width="10%"><%- customer[i].taxId %></td>
+                        <td scope="col" width="20%"><%- customer[i].address %></td>
+                        <td scope="col" width="10%"><%- customer[i].customerType %></td>
+                        <td scope="col" width="10%">
+                          <a href="#update-customerForm?customerId=<%-customer[i].customerId %>">
+                            <button class="btn btn-Update" onclick="openForm_Update()">
+                              <i class="fa fa-pen" style="scale: 0.8;"></i>  Edit
+                            </button>
+                          </a>
+
+                          <a href="">
+                            <button class="btn btn-Delete" onclick="openForm_Update()">
+                              <i class="fa fa-trash" style="scale: 0.8;"></i>  Delete
+                            </button>
+                          </a>
+                        </td>
+                    </tr>
+                <% } %>
+
+            <%} else{ %>
+                <h1>Customers not found!</h1>
+            <%} %>
+            <!-- //body -->
+            
+          </table> 
+          </div>    
+        </div>
+        <!-- //table -->
+        <!-- pagination -->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-end">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Trước</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Sau</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- //pagination -->
+        
+      </div>
+    </section>
+
+    <!-- popup -->
+    <div class="form-popup--customer" id="customerForm">
+      <div class="bg-popup"></div>
+      <form  class="form-container" method="post">
+        <h2>Thông tin khách hàng</h2>
+        <hr bg-dark>
+        <div class="form-content">
+          <!-- <div class="form-left"> -->
+            <div class="customerId">
+              <label for="customerId"><b>Mã khách hàng</b> <b style="color: red;">*</b></label>
+              <input class="customerId" type="text" placeholder="Nhập mã khách hàng" name="customerId">
+            </div>
+            <div class="customerName">
+              <label for="customerName"><b>Tên khách hàng</b> <b style="color: red;">*</b></label>
+              <input id="customerName" type="text" placeholder="Nhập tên khách hàng" name="customerName" required>
+            </div>
+            <div class="taxId">
+              <label for="taxId"><b>Mã số thuế</b></label>
+              <input id="taxId" type="text" placeholder="Nhập mã số thuế" name="taxId" required>
+            </div>
+            <div class="customerType">
+              <label for="customerType"><b>Hình thức</b></label>
+              <select name="customerType" id="customerType">
+                <option value=""> --Lựa chọn hình thức--</option>
+                <option value="Doanh nghiệp">Doanh nghiệp</option>
+                <option value="Cá nhân">Cá nhân</option>
+            </select>
+            </div>
+          <!-- </div> -->
+
+          <!-- <div class="form-right"> -->
+            <div class="email">
+              <label for="email"><b>Email</b></label>
+              <input id= "email" type="email" placeholder="Nhập email" name="email" required>
+            </div>
+            <div class="phone">
+              <label for="phone"><b>Điện thoại</b></label>
+              <input id="phone" type="tel" placeholder="Nhập số điện thoại" name="phone" required>
+            </div>
+            <div class="address">
+              <label for="address"><b>Địa chỉ</b></label>
+              <input id="address" type="textarea" placeholder="Nhập địa chỉ" name="address" required>
+            </div>
+          </div>
+        <!-- </div> -->
+        
+        <input type="submit" id="btnSave" value="Save">
+        <!-- <input type="submit" id="btnSave" value="Lưu"> -->
+        <button type="button" id="btnClose" onclick="closeForm()"><i class="fa-solid fa-close"></i></button>
+        <button type="button" id="btnCancel" onclick="closeForm()">Hủy</i></button>
+      </form>
+    </div>
+    <!-- //popup -->
+
+    <!-- popup -->
+    <div class="form-popup--customer" id="customerForm_Update">
+      <div class="bg-popup"></div>
+      <form  class="form-container" method="post">
+        <h2>Thông tin khách hàng</h2>
+        <hr bg-dark>
+        <div class="form-content">
+          <!-- <div class="form-left"> -->
+            <div class="customerId">
+              <label for="customerId"><b>Mã khách hàng</b> <b style="color: red;">*</b></label>
+              <input class="customerId" type="text" value="<%= customer[0].customerId %>" placeholder="Nhập mã khách hàng" name="customerId" >
+            </div>
+            <div class="customerName">
+              <label for="customerName"><b>Tên khách hàng</b> <b style="color: red;">*</b></label>
+              <input id="customerName" type="text" value="<%= customer[0].customerName %>" placeholder="Nhập tên khách hàng" name="customerName" required>
+            </div>
+            <div class="taxId">
+              <label for="taxId"><b>Mã số thuế</b></label>
+              <input id="taxId" type="text" value="<%= customer[0].taxId %>" placeholder="Nhập mã số thuế" name="taxId" required>
+            </div>
+            <div class="customerType">
+              <label for="customerType"><b>Hình thức</b></label>
+              <select name="customerType" id="customerType" value="<%= customer[0].customerType %>">
+                <option value=""> --Lựa chọn hình thức--</option>
+                <option value="Doanh nghiệp">Doanh nghiệp</option>
+                <option value="Cá nhân">Cá nhân</option>
+            </select>
+            </div>
+          <!-- </div> -->
+
+          <!-- <div class="form-right"> -->
+            <div class="email">
+              <label for="email"><b>Email</b></label>
+              <input id= "email" type="email" value="<%= customer[0].email %>" placeholder="Nhập email" name="email" required>
+            </div>
+            <div class="phone">
+              <label for="phone"><b>Điện thoại</b></label>
+              <input id="phone" type="tel" value="<%= customer[0].phone %>" placeholder="Nhập số điện thoại" name="phone" required>
+            </div>
+            <div class="address">
+              <label for="address"><b>Địa chỉ</b></label>
+              <input id="address" type="textarea" value="<%= customer[0].address %>" placeholder="Nhập địa chỉ" name="address" required>
+            </div>
+          </div>
+        <!-- </div> -->
+      
+      <input type="submit" id="btnSave" value="Save">
+      <!-- <input type="submit" id="btnSave" value="Lưu"> -->
+      <button type="button" id="btnClose" onclick="closeForm()"><i class="fa-solid fa-close"></i></button>
+      <button type="button" id="btnCancel" onclick="closeForm()">Hủy</i></button>
+    </form>
+  </div>
+  <!-- //popup -->
+
+    <script src="/customer.js"></script>
+    <script src="/app.js"></script>
+  
+</body>
+</html>
+

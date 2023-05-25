@@ -1,0 +1,21 @@
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 0 auto;
+    &-text{
+        font-weight: bold;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+    &-value{
+        width: 200px;
+    }
+}
+
+.home-content--sosach{
+    .date-input{
+        display: flex;
+        flex-direction: column;
+    }
+}
